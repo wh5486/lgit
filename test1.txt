@@ -1,0 +1,22 @@
+1. 变量 
+    声明         var a int        (默认值)
+    连续声明     var b,c int
+    初始化       var a int = 11
+    赋值         a = 12
+    自动推导     d := 13  只有初始化的时候可以用
+连续自动推导  a, b := 10, 11.2 
+常量自动推导  const c, d = 20, 22.3 (没有冒号:)
+
+a, b := 10, 11.2 
+变量交换    a,b = b,a
+
+匿名变量
+
+func test()(a,b,c int){
+ return 1,2,3
+}
+var j,k,l int
+匿名变量 a,_ = b,a ()
+fmt.Printf("a = %d,b= %f", a, b)
+const c, d = 20, 22.3
+fmt.Printf("c = %d,d= %f", c, d)
